@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Lithos Pro";
+    src: url("/fonts/LithosPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Lithos Pro Black";
+    src: url("/fonts/LithosPro-Black.otf");
+}
+
+body {
+    position: relative;
+
+    .main {
+        background: url(../img/privacy-policy/bg-bottom.png) no-repeat center bottom / 100%;
+
+        .container {
+            .bird-bg1 {
+                position: absolute;
+                left: 80px;
+                top: 34px;
+            }
+
+            .bird-bg2 {
+                position: absolute;
+                right: 120px;
+                top: 0;
+            }
+
+            p,
+            a {
+                font-family: "Lithos Pro";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 147.52%;
+                color: #4A4A4A;
+                margin: 0;
+            }
+
+            .title-img {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                margin-top: 135px;
+                margin-bottom: 21px;
+            }
+
+            .title {
+                margin-top: 75px;
+                margin-bottom: 45px;
+            }
+
+            .margin-bottom {
+                margin-bottom: 26px;
+            }
+
+        }
+
+        .container2 {
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 103px;
+            padding-bottom: 450px;
+        }
+
+        .btn {
+            width: 380px;
+            height: 67px;
+            background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+            box-shadow: 0px 5px 0px -1px #1079DA, 0px 27px 28px -22px rgba(0, 194, 255, 0.58), inset 2px -2px 0px #FFFFFF, inset 0px 0px 20px #3DADFF;
+            border-radius: 25px;
+            font-family: "Lithos Pro";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 147.52%;
+            color: #FFFFFF;
+        }
+
+        .btn:hover,
+        .btn:active {
+            color: #FFFFFF;
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 191px;
+        width: 100%;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .block-rules {
+                width: 388px;
+
+                .title {
+                    font-family: "Lithos Pro Black";
+                    font-style: normal;
+                    font-weight: 850;
+                    font-size: 36px;
+                    line-height: 147.52%;
+                    background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        font-family: "Lithos Pro";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 147.52%;
+                        color: #4A4A4A;
+                    }
+                }
+
+                a {
+                    font-family: "Lithos Pro Black";
+                    font-style: normal;
+                    font-weight: 850;
+                    font-size: 36px;
+                    line-height: 147.52%;
+                    background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
+
+            .block-data {
+                width: 214px;
+                text-align: center;
+
+                p {
+                    font-family: "Lithos Pro Black";
+                    font-style: normal;
+                    font-weight: 850;
+                    font-size: 20px;
+                    line-height: 147.52%;
+                    background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    margin-bottom: 0;
+                }
+            }
+
+            .block-contacts {
+                .block-buttons {
+                    width: 388px;
+                    margin-bottom: 26px;
+
+                    a {
+                        .btn {
+                            width: 68px;
+                            height: 68px;
+                            background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+                            box-shadow: 0px 5px 0px -1px #1079DA, 0px 27px 28px -22px rgba(0, 194, 255, 0.58), inset 2px -2px 0px #FFFFFF, inset 0px 0px 20px #3DADFF;
+                            border-radius: 25px;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: "Lithos Pro";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 147.52%;
+                    color: #242424;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        .main {
+            .container {
+                img {
+                    width: 100%;
+                }
+                .bird-bg1,
+                .bird-bg2 {
+                    display: none;
+                }
+                .title-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .container2 {
+                padding-bottom: 700px;
+            }
+        }
+
+        .footer {
+            bottom: 100px;
+            .container {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+
+                .block-rules {
+                    order: 1;
+                    margin-bottom: 32px;
+                }
+
+                .block-contacts {
+                    order: 2;
+                    margin-bottom: 80px;
+                }
+
+                .block-data {
+                    margin: 0 auto;
+                    order: 3;
+                }
+            }
+        }
+    }
+}

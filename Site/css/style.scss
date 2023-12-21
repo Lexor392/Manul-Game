@@ -1,0 +1,1059 @@
+@font-face {
+    font-family: "Lithos Pro";
+    src: url("/fonts/LithosPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "Lithos Pro Black";
+    src: url("/fonts/LithosPro-Black.otf");
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    .preloader {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+
+        .loader {
+            overflow: hidden;
+            font-size: 10px;
+            margin: 50px auto;
+            text-indent: -9999em;
+            width: 11em;
+            height: 11em;
+            border-radius: 50%;
+            background: #65abf8;
+            background: -moz-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+            background: -webkit-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+            background: -o-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+            background: -ms-linear-gradient(left, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+            background: linear-gradient(to right, #65abf8 10%, rgba(101, 171, 248, 0) 42%);
+            position: relative;
+            z-index: 10;
+            -webkit-animation: load3 1.4s infinite linear;
+            animation: load3 1.4s infinite linear;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        .loader:before {
+            width: 50%;
+            height: 50%;
+            background: #65abf8;
+            border-radius: 100% 0 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+        }
+
+        .loader:after {
+            background: white;
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+            content: '';
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        @-webkit-keyframes load3 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes load3 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .header {
+        position: absolute;
+        width: 100%;
+
+        .navbar {
+            .container {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+
+                .modal-button {
+                    display: none;
+                }
+
+                .logo-bg {
+                    width: 150px;
+                    height: 150px;
+                    background: #ffffff;
+                    filter: blur(11.5px);
+                    border-radius: 100%;
+                    left: -15px;
+                    position: absolute;
+                    z-index: 1;
+                }
+
+                .navbar-brand {
+                    position: relative;
+                    z-index: 2;
+                }
+
+                #navbarNav {
+                    margin-right: 100px;
+                    position: relative;
+
+                    .navbar-nav {
+                        position: relative;
+                        z-index: 2;
+
+                        .nav-item {
+                            .nav-link {
+                                font-family: "Lithos Pro";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 147.52%;
+                                color: #575757;
+                                transition: all 0.3s;
+                                padding-left: 23.5px;
+                                padding-right: 23.5px;
+                            }
+
+                            .nav-link:hover {
+                                color: #575757;
+                                text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        .rectangle {
+            position: absolute;
+            z-index: 5;
+            width: 110%;
+            height: 368px;
+            right: -50px;
+            background: #ffffff;
+            filter: blur(26.5px);
+
+        }
+
+        .rectangle1 {
+            top: 670px;
+            height: 262px;
+        }
+
+        .rectangle2 {
+            top: 1498px;
+            height: 252px;
+            background: #EDFEFF;
+        }
+
+        .rectangle3 {
+            height: 150px;
+            top: 474px;
+        }
+
+        .rectangle4 {
+            top: 2214px;
+        }
+
+        .rectangle5 {
+            top: 2927px;
+        }
+
+        .rectangle6,
+        .rectangle7 {
+            height: 164px;
+            background: rgba(255, 255, 255, 1);
+            filter: blur(30px);
+            top: 700px;
+
+        }
+
+        .first-section {
+            background: url(../img/first-screen/screen-bg.png) no-repeat center bottom -201px / 120%;
+            padding-top: 100px;
+            height: 750px;
+
+            .block-buttons {
+                width: 468px;
+                top: 130px;
+                margin-bottom: 25px;
+                margin-left: 10px;
+                position: absolute;
+                z-index: 7;
+                display: inline-grid;
+                justify-content: space-between;
+
+                a {
+                    margin-bottom: 20px;
+                }
+
+                a .btn {
+                    width: 68px;
+                    height: 68px;
+                    border: none;
+                    background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                    box-shadow: 0px 5px 0px -1px #1079da, 0px 27px 28px -22px rgba(0, 194, 255, 0.58),
+                        inset 2px -2px 0px #ffffff, inset 0px 0px 20px #3dadff;
+                    border-radius: 25px;
+                }
+            }
+
+            .container {
+                position: relative;
+                text-align: center;
+
+                .block {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+                }
+
+                .btn-play {
+                    text-decoration: none;
+                }
+
+                .section-title {
+                    position: relative;
+                    z-index: 3;
+                }
+
+                .section-subtitle {
+                    position: relative;
+                    z-index: 3;
+                    font-family: "Lithos Pro";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 147.52%;
+                    letter-spacing: 0.01em;
+                    color: #575757;
+                    opacity: 0.81;
+
+                    margin-bottom: 30px;
+                }
+
+                .section-btn {
+                    position: relative;
+                    z-index: 3;
+                    width: 380px;
+                    height: 67px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                    box-shadow: 0px 5px 0px -1px #1079da, 0px 27px 28px -22px rgba(0, 194, 255, 0.58),
+                        inset 2px -2px 0px #ffffff, inset 0px 0px 20px #3dadff;
+                    border-radius: 25px;
+
+                    font-family: "Lithos Pro";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 42.624px;
+                    line-height: 147.52%;
+                    color: #ffffff;
+                }
+
+                .btn-group {
+                    margin: 0 auto;
+                    margin-top: 24px;
+                    width: 380px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        text-decoration: none;
+
+                        .btn {
+                            width: 180px;
+                            height: 67px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: linear-gradient(91.78deg, #FFFFFF 0%, #DBDBDB 100%);
+                            border: 1px solid #0094FF;
+                            box-shadow: 0px 5px 0px -1px #1079DA, 0px 27px 28px -22px rgba(0, 194, 255, 0.58), inset -2px -3px 0px #FFFFFF, inset 0px 0px 18px -5px #FFFFFF;
+                            border-radius: 25px;
+
+                            span {
+                                font-family: 'Lithos Pro';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 88.02%;
+                                background: linear-gradient(180deg, #00B2FF 0%, #0087C0 100%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                            }
+                        }
+                    }
+                }
+
+                .cat-img {
+                    position: absolute;
+                    z-index: 2;
+                    top: 121px;
+                    right: -19px;
+                }
+
+                .title-coin2 {
+                    position: absolute;
+                    z-index: 2;
+                    right: -38px;
+                    top: -19px;
+                }
+
+                .btn-coin {
+                    margin-top: -72px;
+                }
+
+
+                .bg-slime2 {
+                    position: absolute;
+                    z-index: 1;
+                    right: 340px;
+                    top: 502px;
+                }
+
+                .bird-bg1 {
+                    position: absolute;
+                    left: 80px;
+                    top: 34px;
+                }
+
+                .bird-bg2 {
+                    position: absolute;
+                    right: 120px;
+                    top: 0;
+                }
+            }
+
+            .bg-three1 {
+                position: absolute;
+                z-index: 2;
+                left: 0;
+                top: 129px;
+            }
+
+            .bg-three2 {
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                top: 129px;
+            }
+
+            .bg-slime1 {
+                position: absolute;
+                z-index: 3;
+                left: 0;
+                top: 532px;
+            }
+        }
+
+        .second-section {
+            position: relative;
+            height: 878px;
+
+            .img-bg {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+            }
+
+            .container {
+                text-align: center;
+
+                .section-title {
+                    position: relative;
+                    z-index: 6;
+                }
+
+                .wrapper {
+                    position: relative;
+                    z-index: 6;
+                    margin-top: 74.82px;
+                    display: flex;
+                    justify-content: space-between;
+
+
+
+                    .img-bird {
+                        left: 47%;
+                        width: 90px;
+                        position: absolute;
+                        z-index: 4;
+                    }
+
+                    .block {
+                        max-width: 480px;
+
+                        .block-img {
+                            position: relative;
+                            z-index: 2;
+                            width: 480px;
+                            height: 301px;
+                            // filter: drop-shadow(0px 4px 24px rgba(49, 139, 205, 0.19));
+                            background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+                            border-radius: 25px;
+
+                            .img-title {
+                                position: absolute;
+                                top: 23px;
+                                width: 100%;
+                                height: 46px;
+                                background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                span {
+                                    font-family: "Lithos Pro Black";
+                                    font-style: normal;
+                                    font-weight: 850;
+                                    font-size: 32px;
+                                    line-height: 147.52%;
+                                    background: linear-gradient(180deg,
+                                            #ffffff 24.47%,
+                                            rgba(255, 255, 255, 0.75) 107.45%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                border-radius: 25px;
+                            }
+                        }
+
+                        .block-title {
+                            position: relative;
+                            margin-top: 33px;
+                            text-align: left;
+                            font-family: "Lithos Pro";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 147.52%;
+                            color: #2b2b2b;
+
+                            .d1,
+                            span {
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            p {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .block1 .block-title {
+                        max-width: 392px;
+
+                        .title-bg {
+                            width: 453px;
+                            height: 196px;
+                            background: #ffffff;
+                            filter: blur(25px);
+                            position: absolute;
+                            left: -33px;
+                            top: -64px;
+                        }
+                    }
+
+                    .section-bridge {
+                        margin-top: 203px;
+                        width: 366px;
+                        margin-left: 466px;
+                        position: absolute;
+                        z-index: 1;
+                    }
+
+                    .block2 .block-title {
+                        max-width: 456px;
+
+                        .d1 {
+                            max-width: 295px;
+                        }
+
+                        .title-bg {
+                            width: 528px;
+                            height: 320px;
+                            background: #ffffff;
+                            filter: blur(25px);
+                            position: absolute;
+                            left: -26px;
+                            top: -142px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-section {
+            height: 650px;
+            position: relative;
+
+            .img-bg {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+            }
+
+            .img-bg2 {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+                top: -344px;
+            }
+
+            .skyland {
+                position: absolute;
+                z-index: 6;
+                right: 0;
+                top: -542px;
+            }
+
+            .container {
+                text-align: center;
+
+                .section-title {
+                    position: relative;
+                    z-index: 6;
+                }
+
+                .wrapper {
+                    margin-top: 35px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    z-index: 6;
+
+                    .block-img {
+                        filter: drop-shadow(0px 20px 50px rgba(0, 148, 255, 0.28));
+                        background: #d9d9d9;
+                        border-radius: 25px;
+                        border: 6px solid #0094ff;
+                        box-shadow: 0px 30px 33px -16px rgba(0, 148, 255, 0.23);
+                        border-radius: 25px;
+
+                        img {
+                            width: 100%;
+                            border-radius: 19px;
+                        }
+                    }
+
+                    .block-content {
+                        max-width: 532px;
+                        text-align: left;
+                        margin-left: 30px;
+
+                        .content-title {
+                            text-align: left;
+                            font-family: "Lithos Pro";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 147.52%;
+                            color: #2b2b2b;
+                            margin-bottom: 24px;
+                        }
+
+                        .content-btn {
+                            width: 380px;
+                            height: 67px;
+                            border: none;
+                            background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                            box-shadow: 0px 5px 0px -1px #1079da, 0px 27px 28px -22px rgba(0, 194, 255, 0.58),
+                                inset 2px -2px 0px #ffffff, inset 0px 0px 20px #3dadff;
+                            border-radius: 25px;
+
+                            font-family: "Lithos Pro";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 147.52%;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fourth-section {
+            position: relative;
+            height: 649px;
+
+            .skyland {
+                position: absolute;
+                z-index: 6;
+                left: 0;
+                top: -542px;
+            }
+
+            .img-bg {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+            }
+
+            .img-bg2 {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+                top: 56px;
+            }
+
+            .container {
+                text-align: center;
+
+                .section-title {
+                    position: relative;
+                    z-index: 6;
+                }
+
+                .wrapper {
+                    position: relative;
+                    z-index: 6;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+
+                    .block {
+
+                        .block-content {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 380px;
+                            height: 208px;
+                            background: #ffffff;
+                            border: 4px solid #0094ff;
+                            box-shadow: 0px 30px 33px -16px rgba(0, 148, 255, 0.23);
+                            border-radius: 25px;
+                            margin: 0 10px;
+
+                            .title {
+                                font-family: "Lithos Pro";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 32px;
+                                line-height: 147.52%;
+                                text-align: center;
+                                transition: all 0.3s ease;
+
+                                color: #000000;
+
+                                p {
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .skyland-for-block {
+                            margin-top: -16px;
+                        }
+
+                        .block-content:hover {
+                            .title {
+                                color: #0094ff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .fifth-section {
+            position: relative;
+            height: 2059px;
+
+            .img-bg {
+                position: absolute;
+                z-index: 4;
+                height: 100%;
+            }
+
+            .img-bg2 {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+                bottom: 0;
+                right: 0;
+            }
+
+            .img-bg3,
+            .img-bg4 {
+                display: none;
+            }
+
+            .three {
+                position: absolute;
+                z-index: 6;
+                width: 17%;
+                bottom: 33.5vw;
+                left: -59px;
+            }
+
+            .container {
+                text-align: center;
+
+                .section-title {
+                    position: relative;
+                    z-index: 6;
+                }
+
+                .wrapper {
+                    position: relative;
+                    z-index: 7;
+                    margin-top: 61px;
+
+                    .code-container {
+                        margin-bottom: 60px;
+
+                        .title-code {
+                            font-family: "Lithos Pro";
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 32px;
+                            line-height: 147.52%;
+                            color: #000000;
+                            margin-bottom: 10px;
+                        }
+
+                        .code {
+                            margin: 0 auto;
+                            width: 89%;
+                            height: 87px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #ffffff;
+                            border: 4px solid #0094ff;
+                            border-radius: 25px;
+                            box-shadow: 0px 0px 33px -16px rgba(0, 148, 255, 0.23);
+
+                            span {
+                                font-family: "Lithos Pro";
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 36px;
+                                line-height: 43px;
+                                color: #000000;
+                            }
+
+                            img {
+                                margin-left: 19px;
+                            }
+                        }
+                    }
+
+                    .btn-group {
+                        margin: 0 auto;
+                        margin-top: 24px;
+                        width: 520px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        a {
+                            text-decoration: none;
+
+                            .btn {
+                                width: 240px;
+                                height: 77px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: linear-gradient(91.78deg, #FFFFFF 0%, #DBDBDB 100%);
+                                border: 1px solid #0094FF;
+                                box-shadow: 0px 5px 0px -1px #1079DA, 0px 27px 28px -22px rgba(0, 194, 255, 0.58), inset -2px -3px 0px #FFFFFF, inset 0px 0px 18px -5px #FFFFFF;
+                                border-radius: 25px;
+
+                                span {
+                                    font-family: 'Lithos Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 24px;
+                                    line-height: 88.02%;
+                                    background: linear-gradient(180deg, #00B2FF 0%, #0087C0 100%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wrapper-content {
+                    position: relative;
+                    z-index: 5;
+                    margin-top: 190px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .block-cards {
+                        max-width: 781px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .block {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: center;
+
+                            .card_ {
+                                position: relative;
+                                transition: all 0.3s ease-in-out;
+                                background: #ffffff;
+                                border: 4px solid #0094ff;
+                                border-radius: 25px;
+                                width: 380px;
+                                height: 208px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 53px;
+
+                                .card-title {
+                                    font-family: "Lithos Pro";
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 30px;
+                                    line-height: 43px;
+                                    color: #000000;
+                                    transition: all 0.3s ease-in-out;
+
+                                    img {
+                                        position: absolute;
+                                    }
+                                }
+                            }
+
+                            .card_:hover {
+                                background: #0094ff;
+                                box-shadow: 0px 34px 33px -16px rgba(0, 148, 255, 0.23);
+
+                                .card-title {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .cat-img {
+                        position: absolute;
+                        z-index: 2;
+                        width: 637.58px;
+                        right: -200px;
+                        top: -55px;
+                    }
+
+                    .cat-shadow {
+                        position: absolute;
+                        z-index: 1;
+                        width: 655px;
+                        height: 100px;
+                        background: rgba(0, 148, 255, 0.4);
+                        filter: blur(34.5px);
+                        border-radius: 100%;
+                        right: -167px;
+                        top: 660px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+    margin-bottom: 20px;
+    margin-top: -412px;
+
+    .container {
+        display: grid;
+        justify-content: center;
+        position: relative;
+        align-items: flex-end;
+
+        .mail {
+            // position: absolute;
+            left: 0;
+            text-decoration: none;
+            font-family: "Lithos Pro";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 147.52%;
+            color: #fff;
+        }
+
+        .block-rules {
+            position: absolute;
+            right: 0px;
+            top: -224px;
+
+            .title {
+                margin-bottom: 20px;
+                font-family: "Lithos Pro Black";
+                font-style: normal;
+                font-weight: 850;
+                font-size: 36px;
+                line-height: 147.52%;
+                background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            ul li {
+                font-family: "Lithos Pro";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 147.52%;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            a {
+                cursor: pointer;
+                font-family: "Lithos Pro Black";
+                font-style: normal;
+                font-weight: 850;
+                font-size: 24px;
+                line-height: 147.52%;
+                background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+
+        .block-data {
+            order: 2;
+            text-align: center;
+            margin-top: 52px;
+            // margin-left: 360px;
+
+            p {
+                max-width: 203px;
+                margin: 0 auto;
+                margin-bottom: 5px;
+                font-family: "Lithos Pro Black";
+                font-style: normal;
+                font-weight: 850;
+                font-size: 20px;
+                line-height: 147.52%;
+                text-align: center;
+                background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+
+        .block-contacts {
+            order: 1;
+            text-align: center;
+            // position: absolute;
+            top: -170px;
+            justify-items: center;
+            display: grid;
+            text-align: center;
+
+            .block-buttons {
+                width: 468px;
+                margin-bottom: 25px;
+                display: flex;
+                justify-content: space-between;
+
+                a .btn {
+                    width: 68px;
+                    height: 68px;
+                    border: none;
+                    background: linear-gradient(91.78deg, #49b3ff 0%, #0094ff 100%);
+                    box-shadow: 0px 5px 0px -1px #1079da, 0px 27px 28px -22px rgba(0, 194, 255, 0.58),
+                        inset 2px -2px 0px #ffffff, inset 0px 0px 20px #3dadff;
+                    border-radius: 25px;
+                }
+            }
+
+
+
+            .pp {
+                margin-top: 30px;
+                width: 164px;
+                height: 106px;
+                font-family: "Lithos Pro Black";
+                font-style: normal;
+                font-weight: 850;
+                font-size: 36px;
+                line-height: 147.52%;
+                background: linear-gradient(91.78deg, #49B3FF 0%, #0094FF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
+    }
+}
